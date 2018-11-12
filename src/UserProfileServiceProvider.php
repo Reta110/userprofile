@@ -19,7 +19,6 @@ class UserProfileServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/views' => resource_path('views/vendor/courier'),
         ]);
-        //$this->loadMigrationsFrom(__DIR__.'/migrations');
     }
 
     /**
