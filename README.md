@@ -1,7 +1,15 @@
 # User-profile
 
-This is a boilerplate user-profile views to the infyom package.
+Extensible user-profile for infyom package.
 
 1. Run the composer command
-2. Add the Service Provider
-3. Put the link in the file layouts/app.blade..php
+
+	composer require reta110/user-profile
+
+2. Add the Service Provider in config/app.php
+
+	Reta110\UserProfile\UserProfileServiceProvider::class,
+
+3. Replace the link in the file resources/views/layouts/app.blade..php
+
+	<a href="{!! route('user-profile.edit') !!}" class="btn btn-default btn-flat">Profile</a>
