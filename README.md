@@ -5,7 +5,7 @@ Extensible user-profile for infyom package.
 1. Run the composer command
 
 ```
-	composer require reta110/user-profile 1.0
+	composer require reta110/user-profile
 ```
 
 2. Add the Service Provider in config/app.php
