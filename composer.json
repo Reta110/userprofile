@@ -1,25 +1,26 @@
 {
     "name": "reta110/user-profile",
     "description": "Infyom user profile boilerplate.",
-    "keywords": ["Infyom", "user-profile","profile"],
+    "keywords": ["Infyom", "user-profile", "profile"],
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Rafael Torrealba",
-            "email": "rafaeltorrealba6@gmail.com"
+    "type": "coomposer-plugin",
+    "authors": [{
+        "name": "Rafael Torrealba",
+        "email": "rafaeltorrealba6@gmail.com"
+    }],
+    "require": {
+        "php": "^5.3.3 || ^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Reta110\\UserProfile\\": "src/"
         }
-    ],
-    "require": {},
-     "autoload": {
-	 "psr-4": {
-	   "Reta110\\UserProfile\\": "src/"
-	}
-	},
-	"extra": {
-	"laravel": {
-	  "providers": [
-	    "Reta110\\UserProfile\\UserProfileServiceProvider"
-	  ]
-	}
-	}
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Reta110\\UserProfile\\UserProfileServiceProvider"
+            ]
+        }
+    }
 }
